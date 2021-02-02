@@ -64,6 +64,7 @@ class MainActivity : AppCompatActivity() {
                     result.text = "あなたの勝ちです"
                     result.setTextColor(Color.RED)
 
+
                 }
                 1->{
                     imageView.setImageResource(R.drawable.choki)
