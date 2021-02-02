@@ -12,42 +12,42 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         gooButton.setOnClickListener {
-            player.text = "あなたの手はグーです"
+            you.text = "あなたの手はグーです"
             val number:Int = Random.nextInt(3)
 
             when(number){
                 0->{
-                    cpu.text = "相手の手はグーです"
+                    imageView.setImageResource(R.drawable.goo)
                     result.text = "引き分けです"
                 }
                 1->{
-                    cpu.text = "相手の手はチョキです"
+                    imageView.setImageResource(R.drawable.choki)
                     result.text = "あなたの勝ちです"
                     result.setTextColor(Color.RED)
                 }
                 2->{
-                    cpu.text = "相手の手はパーです"
+                    imageView.setImageResource(R.drawable.paa)
                     result.text = "あなたの負けです"
                 }
             }
         }
 
         chokiButton.setOnClickListener {
-            player.text = "あなたの手はチョキです"
+            you.text = "あなたの手はチョキです"
             val number:Int = Random.nextInt(3)
 
             when(number){
                 0->{
-                    cpu.text = "相手の手はグーです"
+                    imageView.setImageResource(R.drawable.goo)
                     result.text = "あなたの負けです"
                 }
                 1->{
-                    cpu.text = "相手の手はチョキです"
+                    imageView.setImageResource(R.drawable.choki)
                     result.text = "引き分けです"
 
                 }
                 2->{
-                    cpu.text = "相手の手はパーです"
+                    imageView.setImageResource(R.drawable.paa)
                     result.text = "あなたの勝ちです"
                     result.setTextColor(Color.RED)
                 }
@@ -55,23 +55,23 @@ class MainActivity : AppCompatActivity() {
         }
 
         paaButton.setOnClickListener {
-            player.text = "あなたの手はパーです"
+            you.text = "あなたの手はパーです"
             val number:Int = Random.nextInt(3)
 
             when(number){
                 0->{
-                    cpu.text = "相手の手はグーです"
+                    imageView.setImageResource(R.drawable.goo)
                     result.text = "あなたの勝ちです"
                     result.setTextColor(Color.RED)
-                    result.text = "あなたの負けです"
+
                 }
                 1->{
-                    cpu.text = "相手の手はチョキです"
+                    imageView.setImageResource(R.drawable.choki)
                     result.text = "あなたの負けです"
 
                 }
                 2->{
-                    cpu.text = "相手の手はパーです"
+                    imageView.setImageResource(R.drawable.paa)
                     result.text = "引き分けです"
 
                 }
